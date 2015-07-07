@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-| Date         : Mon Jul  6 19:42:33 2015
+| Date         : Tue Jul  7 16:38:00 2015
 | Host         : lappc14.epfl.ch running 64-bit Red Hat Enterprise Linux Server release 7.1 (Maipo)
 | Command      : report_utilization -file dyract_sys_wrapper_utilization_synth.rpt -pb dyract_sys_wrapper_utilization_synth.pb
 | Design       : dyract_sys_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Fixed | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                | 30837 |     0 |    303600 | 10.15 |
-|   LUT as Logic             | 27573 |     0 |    303600 |  9.08 |
+| Slice LUTs*                | 30844 |     0 |    303600 | 10.15 |
+|   LUT as Logic             | 27580 |     0 |    303600 |  9.08 |
 |   LUT as Memory            |  3264 |     0 |    130800 |  2.49 |
 |     LUT as Distributed RAM |  1784 |     0 |           |       |
 |     LUT as Shift Register  |  1480 |     0 |           |       |
@@ -164,19 +164,19 @@ Table of Contents
 |        Ref Name        |  Used |  Functional Category |
 +------------------------+-------+----------------------+
 | FDRE                   | 35500 |         Flop & Latch |
-| LUT6                   |  9402 |                  LUT |
-| LUT3                   |  8174 |                  LUT |
-| LUT5                   |  7600 |                  LUT |
-| LUT2                   |  4443 |                  LUT |
-| LUT4                   |  3529 |                  LUT |
+| LUT6                   |  9401 |                  LUT |
+| LUT3                   |  8175 |                  LUT |
+| LUT5                   |  7598 |                  LUT |
+| LUT2                   |  4444 |                  LUT |
+| LUT4                   |  3528 |                  LUT |
 | RAMD32                 |  2676 |   Distributed Memory |
 | MUXF7                  |  1164 |                MuxFx |
-| LUT1                   |  1073 |                  LUT |
+| LUT1                   |  1074 |                  LUT |
 | SRLC32E                |   939 |   Distributed Memory |
 | FDSE                   |   907 |         Flop & Latch |
 | RAMS32                 |   892 |   Distributed Memory |
 | FDCE                   |   694 |         Flop & Latch |
-| CARRY4                 |   593 |           CarryLogic |
+| CARRY4                 |   599 |           CarryLogic |
 | SRL16E                 |   534 |   Distributed Memory |
 | MUXF8                  |   140 |                MuxFx |
 | FDPE                   |   137 |         Flop & Latch |

@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-| Date         : Tue Jul  7 12:17:04 2015
+| Date         : Tue Jul  7 16:46:10 2015
 | Host         : lappc14.epfl.ch running 64-bit Red Hat Enterprise Linux Server release 7.1 (Maipo)
 | Command      : report_drc
 ----------------------------------------------------------------------------------------------------
@@ -16,11 +16,11 @@ Table of Contents
 1. REPORT SUMMARY
 -----------------
             Netlist: netlist
-          Floorplan: checkpoint_dyract_sys_wrapper
+          Floorplan: design_1
       Design limits: <entire design considered>
            Ruledeck: default
            Max violations: <unlimited>
-         Violations found: 3
+         Violations found: 2
 
 2. REPORT DETAILS
 -----------------
@@ -40,11 +40,6 @@ Related violations: <none>
 REQP-1709#1 Warning
 Clock output buffering  
 PLLE2_ADV connectivity violation. The signal dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_ddr3_infrastructure/pll_clk3_out on the dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_ddr3_infrastructure/plle2_i/CLKOUT3 pin of dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_ddr3_infrastructure/plle2_i does not drive the same kind of BUFFER load as the other CLKOUT pins. Routing from the different buffer types will not be phase aligned.
-Related violations: <none>
-
-RTSTAT-10#1 Warning
-No routable loads  
-17 net(s) have no routable loads. The problem net(s) are dyract_sys_i/dyract_0_m_axi_mm2s_ARCACHE[2], dyract_sys_i/dyract_0_m_axi_mm2s_ARCACHE[3], dyract_sys_i/dyract_0_m_axi_mm2s_ARID, dyract_sys_i/dyract_0_m_axi_mm2s_ARPROT, dyract_sys_i/dyract_0_m_axi_s2mm_AWCACHE[2], dyract_sys_i/dyract_0_m_axi_s2mm_AWCACHE[3], dyract_sys_i/dyract_0_m_axi_s2mm_AWID[1], dyract_sys_i/dyract_0_m_axi_s2mm_AWID[2], dyract_sys_i/dyract_0_m_axi_s2mm_AWID[3], dyract_sys_i/dyract_0_m_axi_s2mm_AWPROT.
 Related violations: <none>
 
 

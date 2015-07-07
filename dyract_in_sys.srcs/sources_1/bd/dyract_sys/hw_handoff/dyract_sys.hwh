@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Jul  6 19:28:05 2015" VIVADOVERSION="2014.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Jul  7 16:24:07 2015" VIVADOVERSION="2014.4">
 
   <SYSTEMINFO ARCH="virtex7" BOARD="xilinx.com:vc707:part0:1.1" DEVICE="7vx485t" NAME="dyract_sys_imp" PACKAGE="ffg1761" SPEEDGRADE="-2"/>
 
@@ -1462,11 +1462,11 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE FULLNAME="/dyract_0" HWVERSION="1.0" INSTANCE="dyract_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="dyract" VLNV="VIP:pcie_intf:dyract:1.0">
+    <MODULE FULLNAME="/dyract_0" HWVERSION="1.1" INSTANCE="dyract_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="dyract" VLNV="VIP:pcie:dyract:1.1">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="RECONFIG_ENABLE" VALUE="0"/>
-        <PARAMETER NAME="Component_Name" VALUE="dyract_sys_dyract_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="dyract_sys_dyract_0_1"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
@@ -4904,20 +4904,20 @@
         <PORT CLKFREQUENCY="100000000" DIR="O" NAME="ui_clk" SIGIS="clk" SIGNAME="mig_7series_0_ui_clk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="rst_mig_7series_0_100M" PORT="slowest_sync_clk"/>
-            <CONNECTION INSTANCE="axi_mem_intercon" PORT="M00_ACLK"/>
             <CONNECTION INSTANCE="microblaze_0" PORT="Clk"/>
             <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_v10" PORT="LMB_Clk"/>
             <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_bram_if_cntlr" PORT="LMB_Clk"/>
             <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_v10" PORT="LMB_Clk"/>
             <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_bram_if_cntlr" PORT="LMB_Clk"/>
-            <CONNECTION INSTANCE="dyract_0" PORT="m_axi_mm2s_aclk"/>
-            <CONNECTION INSTANCE="dyract_0" PORT="m_axi_s2mm_aclk"/>
+            <CONNECTION INSTANCE="axi_mem_intercon" PORT="M00_ACLK"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="S00_ACLK"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="ACLK"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="S01_ACLK"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="S02_ACLK"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="S03_ACLK"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="S04_ACLK"/>
+            <CONNECTION INSTANCE="dyract_0" PORT="m_axi_mm2s_aclk"/>
+            <CONNECTION INSTANCE="dyract_0" PORT="m_axi_s2mm_aclk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="2" NAME="s_axi_awid" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_awid">

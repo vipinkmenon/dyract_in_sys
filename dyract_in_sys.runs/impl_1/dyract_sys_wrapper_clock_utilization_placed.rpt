@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-| Date         : Tue Jul  7 12:13:39 2015
+| Date         : Tue Jul  7 16:43:15 2015
 | Host         : lappc14.epfl.ch running 64-bit Red Hat Enterprise Linux Server release 7.1 (Maipo)
 | Command      : report_clock_utilization -file dyract_sys_wrapper_clock_utilization_placed.rpt
 | Design       : dyract_sys_wrapper
@@ -26,8 +26,9 @@ Table of Contents
 12. Net wise resources used in clock region X1Y3
 13. Net wise resources used in clock region X0Y4
 14. Net wise resources used in clock region X1Y4
-15. Net wise resources used in clock region X1Y5
-16. Net wise resources used in clock region X1Y6
+15. Net wise resources used in clock region X0Y5
+16. Net wise resources used in clock region X1Y5
+17. Net wise resources used in clock region X1Y6
 
 1. Clock Primitive Utilization
 ------------------------------
@@ -53,22 +54,22 @@ Table of Contents
 +-------+---------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+-------+-------+-------+---------------+-----------+
 | Index | BUFG Cell                                                                                                     | Net Name                                                                                         |  BELs | Sites | Fixed | MaxDelay (ns) | Skew (ns) |
 +-------+---------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+-------+-------+-------+---------------+-----------+
-|     1 | dbg_hub/inst/u_bufg_icon_update                                                                               | dbg_hub/inst/UPDATE                                                                              |     1 |     1 |    no |         1.377 |     0.082 |
+|     1 | dbg_hub/inst/u_bufg_icon_update                                                                               | dbg_hub/inst/UPDATE                                                                              |     1 |     1 |    no |         1.281 |     0.073 |
 |     2 | dyract_sys_i/dyract_0/inst/pcie/app/ucg/BUFG_FB                                                               | dyract_sys_i/dyract_0/inst/pcie/app/ucg/clkfb_bufgout                                            |     1 |     1 |    no |         1.674 |     0.084 |
 |     3 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/txoutclk_i.txoutclk_i                                    | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/refclk                                      |     1 |     1 |    no |         1.711 |     0.086 |
-|     4 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/userclk1_i1.usrclk1_i1                                   | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_USERCLK1_IN                            |     9 |    17 |    no |         1.692 |     0.114 |
-|     5 | dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_ddr3_infrastructure/gen_mmcm.u_bufg_mmcm_ps_clk | dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_ddr3_infrastructure/mmcm_ps_clk    |    22 |    14 |    no |         2.221 |     0.645 |
-|     6 | dyract_sys_i/dyract_0/inst/pcie/app/ucg/BUFG_CLK0                                                             | dyract_sys_i/dyract_0/inst/pcie/app/ucg/user_clk                                                 |    28 |     7 |    no |         1.603 |     0.097 |
-|     7 | dyract_sys_i/dyract_0/inst/pcie/pcie_7x_v1_8_i/inst/inst/gt_top_i/pipe_wrapper_i/cpllpd_refclk_inst           | dyract_sys_i/dyract_0/inst/pcie/pcie_7x_v1_8_i/inst/inst/gt_top_i/pipe_wrapper_i/gt_cpllpdrefclk |    36 |     8 |    no |         1.749 |     0.110 |
-|     8 | dyract_sys_i/mdm_1/U0/Ext_JTAG_UPDATE_BUFG_inst                                                               | dyract_sys_i/mdm_1/U0/Ext_JTAG_UPDATE                                                            |    38 |    15 |    no |         1.456 |     0.113 |
-|     9 | dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_iodelay_ctrl/clk_ref_200.u_bufg_clk_ref         | dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_iodelay_ctrl/O1                    |    61 |    23 |    no |         1.496 |     1.496 |
-|    10 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/icapclk_i1                                               | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/icap_clk                                    |    84 |    26 |    no |         1.831 |     0.332 |
-|    11 | dyract_sys_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK                                                             | dyract_sys_i/mdm_1/U0/Ext_JTAG_DRCK                                                              |   257 |    80 |    no |         1.519 |     0.315 |
-|    12 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/dclk_i_bufg.dclk_i                                       | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_DCLK_IN                                |   394 |   129 |    no |         1.923 |     0.312 |
-|    13 | dbg_hub/inst/u_bufg_icon                                                                                      | dbg_hub/inst/idrck                                                                               |   459 |   106 |    no |         1.435 |     0.236 |
-|    14 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1                                 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_OOBCLK_IN                              |  1296 |   448 |    no |         1.837 |     0.626 |
-|    15 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/userclk2_i1.usrclk2_i1                                   | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_USERCLK2_IN                            |  5737 |  1794 |    no |         1.746 |     0.477 |
-|    16 | dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0              | dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_ddr3_infrastructure/CLK            | 33658 |  9810 |    no |         1.885 |     0.704 |
+|     4 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/userclk1_i1.usrclk1_i1                                   | dyract_sys_i/dyract_0/inst/pcie/PIPE_USERCLK1_IN                                                 |     9 |    17 |    no |         1.692 |     0.114 |
+|     5 | dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_ddr3_infrastructure/gen_mmcm.u_bufg_mmcm_ps_clk | dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_ddr3_infrastructure/mmcm_ps_clk    |    22 |    14 |    no |         2.221 |     0.664 |
+|     6 | dyract_sys_i/dyract_0/inst/pcie/app/ucg/BUFG_CLK0                                                             | dyract_sys_i/dyract_0/inst/user_clk                                                              |    28 |     7 |    no |         1.603 |     0.097 |
+|     7 | dyract_sys_i/dyract_0/inst/pcie/pcie_7x_v1_8_i/inst/inst/gt_top_i/pipe_wrapper_i/cpllpd_refclk_inst           | dyract_sys_i/dyract_0/inst/pcie/pcie_7x_v1_8_i/inst/inst/gt_top_i/pipe_wrapper_i/gt_cpllpdrefclk |    36 |     8 |    no |         1.739 |     0.107 |
+|     8 | dyract_sys_i/mdm_1/U0/Ext_JTAG_UPDATE_BUFG_inst                                                               | dyract_sys_i/mdm_1/U0/Ext_JTAG_UPDATE                                                            |    38 |    13 |    no |         1.457 |     0.117 |
+|     9 | dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_iodelay_ctrl/clk_ref_200.u_bufg_clk_ref         | dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_iodelay_ctrl/O1                    |    61 |    23 |    no |         1.495 |     1.495 |
+|    10 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/icapclk_i1                                               | dyract_sys_i/dyract_0/inst/pcie/icap_clk                                                         |    84 |    25 |    no |         1.759 |     0.275 |
+|    11 | dyract_sys_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK                                                             | dyract_sys_i/mdm_1/U0/Ext_JTAG_DRCK                                                              |   257 |    89 |    no |         1.519 |     0.178 |
+|    12 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/dclk_i_bufg.dclk_i                                       | dyract_sys_i/dyract_0/inst/pcie/PIPE_DCLK_IN                                                     |   394 |   137 |    no |         1.923 |     0.312 |
+|    13 | dbg_hub/inst/u_bufg_icon                                                                                      | dbg_hub/inst/idrck                                                                               |   459 |   104 |    no |         1.373 |     0.174 |
+|    14 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1                                 | dyract_sys_i/dyract_0/inst/pcie/PIPE_OOBCLK_IN                                                   |  1296 |   464 |    no |         1.837 |     0.626 |
+|    15 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/userclk2_i1.usrclk2_i1                                   | dyract_sys_i/dyract_0/inst/pcie/PIPE_USERCLK2_IN                                                 |  5737 |  1776 |    no |         1.745 |     0.507 |
+|    16 | dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0              | dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_ddr3_infrastructure/CLK            | 33658 |  9899 |    no |         1.885 |     0.704 |
 +-------+---------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+-------+-------+-------+---------------+-----------+
 
 
@@ -89,7 +90,7 @@ Table of Contents
 |     1 | dyract_sys_i/dyract_0/inst/pcie/app/ucg/mmcm_inst                                                 | dyract_sys_i/dyract_0/inst/pcie/app/ucg/clk0_bufgin                                                   |    1 |     1 |    no |         1.934 |     0.097 |
 |     2 | dyract_sys_i/dyract_0/inst/pcie/app/ucg/mmcm_inst                                                 | dyract_sys_i/dyract_0/inst/pcie/app/ucg/clkfb_bufgin                                                  |    1 |     1 |    no |         1.934 |     0.097 |
 |     3 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/mmcm_i                                       | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/clk_250mhz                                       |    1 |     1 |    no |         2.138 |     0.107 |
-|     4 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/mmcm_i                                       | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/icap_clk_0                                       |    1 |     1 |    no |         2.138 |     0.107 |
+|     4 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/mmcm_i                                       | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/icap_clk                                         |    1 |     1 |    no |         2.138 |     0.107 |
 |     5 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/mmcm_i                                       | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/mmcm_fb                                          |    1 |     1 |    no |         0.012 |     0.001 |
 |     6 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/mmcm_i                                       | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/userclk1                                         |    1 |     1 |    no |         2.138 |     0.107 |
 |     7 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/mmcm_i                                       | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/userclk2                                         |    1 |     1 |    no |         2.138 |     0.107 |
@@ -170,17 +171,17 @@ Table of Contents
 | X0Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |    0 |    50 |    0 |    50 |     0 | 44000 |    0 |  8800 |    0 |   140 |    0 |    70 |    0 |   180 |
 | X1Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |    0 |    50 |    0 |    50 |     0 | 44800 |    0 | 10000 |    0 |   160 |    0 |    80 |    0 |   220 |
 | X0Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |    0 |    50 |    0 |    50 |     0 | 39200 |    0 |  8800 |    0 |   140 |    0 |    70 |    0 |   180 |
-| X1Y1              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |    0 |    50 |    0 |    50 |    65 | 44800 |    0 | 10000 |    0 |   160 |    0 |    80 |    0 |   220 |
+| X1Y1              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |    0 |    50 |    0 |    50 |    56 | 44800 |    0 | 10000 |    0 |   160 |    0 |    80 |    0 |   220 |
 | X0Y2              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     5 |    0 |     1 |    0 |    50 |    0 |    50 |    69 | 38000 |    0 |  8600 |    0 |   130 |    0 |    65 |    0 |   180 |
-| X1Y2              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    5 |     5 |    1 |     1 |    0 |    50 |    0 |    50 |  1671 | 43600 |   28 |  9800 |    0 |   150 |    8 |    75 |    0 |   220 |
-| X0Y3              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |    0 |    50 |    0 |    50 |    69 | 44000 |    0 |  8800 |    0 |   140 |    0 |    70 |    0 |   180 |
-| X1Y3              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |    0 |    50 |    0 |    50 |   930 | 44800 |  130 | 10000 |    1 |   160 |    0 |    80 |    0 |   220 |
-| X0Y4              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |    0 |    50 |    0 |    50 |   241 | 44000 |    3 |  8800 |    0 |   140 |    0 |    70 |    0 |   180 |
-| X1Y4              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |   36 |    50 |   44 |    50 | 13071 | 44800 | 2222 | 10000 |    1 |   160 |   12 |    80 |    0 |   220 |
-| X0Y5              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     5 |    0 |     1 |    0 |    50 |    0 |    50 |     0 | 42800 |    0 |  8600 |    0 |   130 |    0 |    65 |    0 |   180 |
-| X1Y5              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    1 |     1 |    0 |     5 |    0 |     1 |    0 |    50 |   24 |    50 | 11454 | 43600 | 2750 |  9800 |    1 |   150 |    8 |    75 |    0 |   220 |
+| X1Y2              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    5 |     5 |    1 |     1 |    0 |    50 |    0 |    50 |  1679 | 43600 |   28 |  9800 |    0 |   150 |    8 |    75 |    0 |   220 |
+| X0Y3              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |    0 |    50 |    0 |    50 |    79 | 44000 |    0 |  8800 |    0 |   140 |    0 |    70 |    0 |   180 |
+| X1Y3              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |    0 |    50 |    0 |    50 |   880 | 44800 |   68 | 10000 |    0 |   160 |    0 |    80 |    0 |   220 |
+| X0Y4              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |    0 |    50 |    0 |    50 |   494 | 44000 |    0 |  8800 |    0 |   140 |    0 |    70 |    0 |   180 |
+| X1Y4              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |   36 |    50 |   44 |    50 | 13091 | 44800 | 2308 | 10000 |    2 |   160 |   12 |    80 |    0 |   220 |
+| X0Y5              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     5 |    0 |     1 |    0 |    50 |    0 |    50 |   120 | 42800 |    0 |  8600 |    0 |   130 |    0 |    65 |    0 |   180 |
+| X1Y5              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    1 |     1 |    0 |     5 |    0 |     1 |    0 |    50 |   24 |    50 | 11543 | 43600 | 2928 |  9800 |    1 |   150 |    8 |    75 |    0 |   220 |
 | X0Y6              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |    0 |    50 |    0 |    50 |     0 | 44000 |    0 |  8800 |    0 |   140 |    0 |    70 |    0 |   180 |
-| X1Y6              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |   36 |    50 |   44 |    50 |  8364 | 44800 |  841 | 10000 |    0 |   160 |    0 |    80 |    0 |   220 |
+| X1Y6              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     5 |    0 |     0 |   36 |    50 |   44 |    50 |  7923 | 44800 |  642 | 10000 |    0 |   160 |    0 |    80 |    0 |   220 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+-------+-------+------+-------+------+-------+------+-------+------+-------+
 * RAMB36 site can be used as two RAMB18/FIFO18 sites
 
@@ -188,12 +189,12 @@ Table of Contents
 8. Net wise resources used in clock region X1Y1
 -----------------------------------------------
 
-+-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-------------------------------------------------------------------+
-| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                           Clock Net Name                          |
-+-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-------------------------------------------------------------------+
-| BUFG        |     ---     |   no  |         1 |        0 |       0 |         0 |       0 |       0 |   0 |     0 |        0 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/refclk       |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  65 |     0 |        0 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_DCLK_IN |
-+-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-------------------------------------------------------------------+
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-------------------------------------------------------------+
+| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                        Clock Net Name                       |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-------------------------------------------------------------+
+| BUFG        |     ---     |   no  |         1 |        0 |       0 |         0 |       0 |       0 |   0 |     0 |        0 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/refclk |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  56 |     0 |        0 | dyract_sys_i/dyract_0/inst/pcie/PIPE_DCLK_IN                |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-------------------------------------------------------------+
 
 
 9. Net wise resources used in clock region X0Y2
@@ -202,7 +203,7 @@ Table of Contents
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-------------------------------------------------------------------------------+
 | Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                                 Clock Net Name                                |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-------------------------------------------------------------------------------+
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  28 |     0 |        0 | dyract_sys_i/dyract_0/inst/pcie/app/ucg/user_clk                              |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  28 |     0 |        0 | dyract_sys_i/dyract_0/inst/user_clk                                           |
 | BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  41 |     0 |        0 | dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_iodelay_ctrl/O1 |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-------------------------------------------------------------------------------+
 
@@ -213,11 +214,11 @@ Table of Contents
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+--------------------------------------------------------------------------------------------------+
 | Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |                                          Clock Net Name                                          |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+--------------------------------------------------------------------------------------------------+
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |        16 |       0 |       0 |    0 |     0 |        0 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_USERCLK1_IN                            |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |        16 |       0 |       0 |    0 |     0 |        0 | dyract_sys_i/dyract_0/inst/pcie/PIPE_USERCLK1_IN                                                 |
 | BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |    8 |    28 |        0 | dyract_sys_i/dyract_0/inst/pcie/pcie_7x_v1_8_i/inst/inst/gt_top_i/pipe_wrapper_i/gt_cpllpdrefclk |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   52 |     0 |        0 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_USERCLK2_IN                            |
-| BUFG        |     ---     |   no  |         0 |        0 |       5 |         0 |       0 |       0 |  324 |     0 |        0 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_DCLK_IN                                |
-| BUFGCTRL    |     ---     |   no  |         0 |        0 |      16 |         0 |       0 |       0 | 1287 |     0 |        0 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_OOBCLK_IN                              |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   51 |     0 |        0 | dyract_sys_i/dyract_0/inst/pcie/PIPE_USERCLK2_IN                                                 |
+| BUFG        |     ---     |   no  |         0 |        0 |       5 |         0 |       0 |       0 |  333 |     0 |        0 | dyract_sys_i/dyract_0/inst/pcie/PIPE_DCLK_IN                                                     |
+| BUFGCTRL    |     ---     |   no  |         0 |        0 |      16 |         0 |       0 |       0 | 1287 |     0 |        0 | dyract_sys_i/dyract_0/inst/pcie/PIPE_OOBCLK_IN                                                   |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+--------------------------------------------------------------------------------------------------+
 
 
@@ -228,21 +229,20 @@ Table of Contents
 | Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                                     Clock Net Name                                    |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+---------------------------------------------------------------------------------------+
 | BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   2 |     0 |        0 | dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_iodelay_ctrl/O1         |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  67 |     0 |        0 | dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_ddr3_infrastructure/CLK |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  77 |     0 |        0 | dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_ddr3_infrastructure/CLK |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+---------------------------------------------------------------------------------------+
 
 
 12. Net wise resources used in clock region X1Y3
 ------------------------------------------------
 
-+-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+---------------------------------------------------------------------------------------+
-| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                                     Clock Net Name                                    |
-+-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+---------------------------------------------------------------------------------------+
-| BUFGCTRL    |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   4 |     0 |        0 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_OOBCLK_IN                   |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  10 |     0 |        0 | dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_ddr3_infrastructure/CLK |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  75 |     0 |        0 | dbg_hub/inst/idrck                                                                    |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         2 |       0 |       0 | 841 |   130 |        0 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_USERCLK2_IN                 |
-+-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+---------------------------------------------------------------------------------------+
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+--------------------------------------------------+
+| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                  Clock Net Name                  |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+--------------------------------------------------+
+| BUFGCTRL    |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   4 |     0 |        0 | dyract_sys_i/dyract_0/inst/pcie/PIPE_OOBCLK_IN   |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   9 |     0 |        0 | dbg_hub/inst/idrck                               |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 867 |    68 |        0 | dyract_sys_i/dyract_0/inst/pcie/PIPE_USERCLK2_IN |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+--------------------------------------------------+
 
 
 13. Net wise resources used in clock region X0Y4
@@ -251,8 +251,8 @@ Table of Contents
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+---------------------------------------------------------------------------------------+
 | Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                                     Clock Net Name                                    |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+---------------------------------------------------------------------------------------+
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  26 |     3 |        0 | dyract_sys_i/mdm_1/U0/Ext_JTAG_DRCK                                                   |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 215 |     0 |        0 | dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_ddr3_infrastructure/CLK |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  34 |     0 |        0 | dbg_hub/inst/idrck                                                                    |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 460 |     0 |        0 | dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_ddr3_infrastructure/CLK |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+---------------------------------------------------------------------------------------+
 
 
@@ -265,38 +265,48 @@ Table of Contents
 | BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       4 |       0 |    0 |     0 |        0 | dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_ddr3_infrastructure/mmcm_ps_clk |
 | BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |    1 |     0 |        0 | dbg_hub/inst/UPDATE                                                                           |
 | BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   15 |     0 |        0 | dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_iodelay_ctrl/O1                 |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  360 |    24 |        0 | dbg_hub/inst/idrck                                                                            |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |        10 |       0 |       0 | 3700 |   454 |        0 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_USERCLK2_IN                         |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |        16 |       0 |       0 | 8995 |  1744 |        0 | dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_ddr3_infrastructure/CLK         |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  392 |    24 |        0 | dbg_hub/inst/idrck                                                                            |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |        12 |       0 |       0 | 3998 |   569 |        0 | dyract_sys_i/dyract_0/inst/pcie/PIPE_USERCLK2_IN                                              |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |        16 |       0 |       0 | 8685 |  1715 |        0 | dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_ddr3_infrastructure/CLK         |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------------------------------------------------+
 
 
-15. Net wise resources used in clock region X1Y5
+15. Net wise resources used in clock region X0Y5
+------------------------------------------------
+
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+---------------------------------------------------------------------------------------+
+| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                                     Clock Net Name                                    |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+---------------------------------------------------------------------------------------+
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 120 |     0 |        0 | dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_ddr3_infrastructure/CLK |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+---------------------------------------------------------------------------------------+
+
+
+16. Net wise resources used in clock region X1Y5
 ------------------------------------------------
 
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-------+-------+----------+--------------------------------------------------------------------------------------------+
 | Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |   FFs | LUTMs | DSP48E1s |                                       Clock Net Name                                       |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-------+-------+----------+--------------------------------------------------------------------------------------------+
 | BUFH        |     ---     |   no  |         1 |        0 |       0 |         0 |       0 |       0 |     0 |     0 |        0 | dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_ddr3_infrastructure/pll_clk3 |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |    35 |     0 |        0 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/icap_clk                              |
 | BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |    38 |     0 |        0 | dyract_sys_i/mdm_1/U0/Ext_JTAG_UPDATE                                                      |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   202 |    26 |        0 | dyract_sys_i/mdm_1/U0/Ext_JTAG_DRCK                                                        |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   422 |   125 |        0 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_USERCLK2_IN                      |
-| BUFG        |     ---     |   no  |         2 |        0 |       0 |        17 |       0 |       0 | 10757 |  2599 |        0 | dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_ddr3_infrastructure/CLK      |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |    46 |     0 |        0 | dyract_sys_i/dyract_0/inst/pcie/icap_clk                                                   |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |    99 |    72 |        0 | dyract_sys_i/dyract_0/inst/pcie/PIPE_USERCLK2_IN                                           |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   228 |    29 |        0 | dyract_sys_i/mdm_1/U0/Ext_JTAG_DRCK                                                        |
+| BUFG        |     ---     |   no  |         2 |        0 |       0 |        17 |       0 |       0 | 11132 |  2827 |        0 | dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_ddr3_infrastructure/CLK      |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-------+-------+----------+--------------------------------------------------------------------------------------------+
 
 
-16. Net wise resources used in clock region X1Y6
+17. Net wise resources used in clock region X1Y6
 ------------------------------------------------
 
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------------------------------------------------+
 | Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |                                         Clock Net Name                                        |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------------------------------------------------+
+| BUFG        |     ---     |   no  |         1 |        0 |       0 |         0 |       0 |       0 |    0 |     0 |        0 | dyract_sys_i/dyract_0/inst/pcie/PIPE_USERCLK2_IN                                              |
 | BUFG        |     ---     |   no  |         1 |        0 |       0 |         0 |       0 |       0 |    0 |     0 |        0 | dyract_sys_i/dyract_0/inst/pcie/app/ucg/clkfb_bufgout                                         |
-| BUFG        |     ---     |   no  |         1 |        0 |       0 |         0 |       0 |       0 |    0 |     0 |        0 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_USERCLK2_IN                         |
 | BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       4 |       0 |   14 |     0 |        0 | dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_ddr3_infrastructure/mmcm_ps_clk |
-| BUFG        |     ---     |   no  |         1 |        0 |       0 |         0 |       0 |       0 |   48 |     0 |        0 | dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/icap_clk                                 |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 8302 |   841 |        0 | dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_ddr3_infrastructure/CLK         |
+| BUFG        |     ---     |   no  |         1 |        0 |       0 |         0 |       0 |       0 |   37 |     0 |        0 | dyract_sys_i/dyract_0/inst/pcie/icap_clk                                                      |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 7872 |   642 |        0 | dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_ddr3_infrastructure/CLK         |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------------------------------------------------+
 
 
@@ -304,15 +314,15 @@ Table of Contents
 # Location of BUFG Primitives 
 set_property LOC BUFGCTRL_X0Y9 [get_cells dbg_hub/inst/u_bufg_icon_update]
 set_property LOC BUFGCTRL_X0Y4 [get_cells dbg_hub/inst/u_bufg_icon]
-set_property LOC BUFGCTRL_X0Y20 [get_cells dyract_sys_i/dyract_0/inst/pcie/app/ucg/BUFG_FB]
-set_property LOC BUFGCTRL_X0Y19 [get_cells dyract_sys_i/dyract_0/inst/pcie/app/ucg/BUFG_CLK0]
 set_property LOC BUFGCTRL_X0Y2 [get_cells dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/dclk_i_bufg.dclk_i]
 set_property LOC BUFGCTRL_X0Y1 [get_cells dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1]
 set_property LOC BUFGCTRL_X0Y3 [get_cells dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/userclk1_i1.usrclk1_i1]
 set_property LOC BUFGCTRL_X0Y0 [get_cells dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/userclk2_i1.usrclk2_i1]
-set_property LOC BUFGCTRL_X0Y6 [get_cells dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/icapclk_i1]
+set_property LOC BUFGCTRL_X0Y20 [get_cells dyract_sys_i/dyract_0/inst/pcie/app/ucg/BUFG_FB]
 set_property LOC BUFGCTRL_X0Y10 [get_cells dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/txoutclk_i.txoutclk_i]
+set_property LOC BUFGCTRL_X0Y6 [get_cells dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/icapclk_i1]
 set_property LOC BUFGCTRL_X0Y8 [get_cells dyract_sys_i/dyract_0/inst/pcie/pcie_7x_v1_8_i/inst/inst/gt_top_i/pipe_wrapper_i/cpllpd_refclk_inst]
+set_property LOC BUFGCTRL_X0Y19 [get_cells dyract_sys_i/dyract_0/inst/pcie/app/ucg/BUFG_CLK0]
 set_property LOC BUFGCTRL_X0Y5 [get_cells dyract_sys_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK]
 set_property LOC BUFGCTRL_X0Y7 [get_cells dyract_sys_i/mdm_1/U0/Ext_JTAG_UPDATE_BUFG_inst]
 set_property LOC BUFGCTRL_X0Y16 [get_cells dyract_sys_i/mig_7series_0/u_dyract_sys_mig_7series_0_3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0]
@@ -358,46 +368,39 @@ add_cells_to_pblock [get_pblocks  CLKAG_dbg_hub/inst/idrck] [get_cells  -filter 
 resize_pblock [get_pblocks CLKAG_dbg_hub/inst/idrck] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X0Y4:CLOCKREGION_X0Y4 CLOCKREGION_X0Y5:CLOCKREGION_X0Y5 CLOCKREGION_X0Y6:CLOCKREGION_X0Y6 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3 CLOCKREGION_X1Y4:CLOCKREGION_X1Y4 CLOCKREGION_X1Y5:CLOCKREGION_X1Y5 CLOCKREGION_X1Y6:CLOCKREGION_X1Y6}
 #endgroup
 
-# Clock net "dyract_sys_i/dyract_0/inst/pcie/app/ucg/user_clk" driven by instance "dyract_sys_i/dyract_0/inst/pcie/app/ucg/BUFG_CLK0" located at site "BUFGCTRL_X0Y19"
+# Clock net "dyract_sys_i/dyract_0/inst/pcie/PIPE_DCLK_IN" driven by instance "dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/dclk_i_bufg.dclk_i" located at site "BUFGCTRL_X0Y2"
 #startgroup
-create_pblock CLKAG_dyract_sys_i/dyract_0/inst/pcie/app/ucg/user_clk
-add_cells_to_pblock [get_pblocks  CLKAG_dyract_sys_i/dyract_0/inst/pcie/app/ucg/user_clk] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="dyract_sys_i/dyract_0/inst/pcie/app/ucg/user_clk"}]]]
-resize_pblock [get_pblocks CLKAG_dyract_sys_i/dyract_0/inst/pcie/app/ucg/user_clk] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X0Y4:CLOCKREGION_X0Y4 CLOCKREGION_X0Y5:CLOCKREGION_X0Y5 CLOCKREGION_X0Y6:CLOCKREGION_X0Y6 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3 CLOCKREGION_X1Y4:CLOCKREGION_X1Y4 CLOCKREGION_X1Y5:CLOCKREGION_X1Y5 CLOCKREGION_X1Y6:CLOCKREGION_X1Y6}
+create_pblock CLKAG_dyract_sys_i/dyract_0/inst/pcie/PIPE_DCLK_IN
+add_cells_to_pblock [get_pblocks  CLKAG_dyract_sys_i/dyract_0/inst/pcie/PIPE_DCLK_IN] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="dyract_sys_i/dyract_0/inst/pcie/PIPE_DCLK_IN"}]]]
+resize_pblock [get_pblocks CLKAG_dyract_sys_i/dyract_0/inst/pcie/PIPE_DCLK_IN] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X0Y4:CLOCKREGION_X0Y4 CLOCKREGION_X0Y5:CLOCKREGION_X0Y5 CLOCKREGION_X0Y6:CLOCKREGION_X0Y6 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3 CLOCKREGION_X1Y4:CLOCKREGION_X1Y4 CLOCKREGION_X1Y5:CLOCKREGION_X1Y5 CLOCKREGION_X1Y6:CLOCKREGION_X1Y6}
 #endgroup
 
-# Clock net "dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_DCLK_IN" driven by instance "dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/dclk_i_bufg.dclk_i" located at site "BUFGCTRL_X0Y2"
+# Clock net "dyract_sys_i/dyract_0/inst/pcie/PIPE_OOBCLK_IN" driven by instance "dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1" located at site "BUFGCTRL_X0Y1"
 #startgroup
-create_pblock CLKAG_dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_DCLK_IN
-add_cells_to_pblock [get_pblocks  CLKAG_dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_DCLK_IN] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_DCLK_IN"}]]]
-resize_pblock [get_pblocks CLKAG_dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_DCLK_IN] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X0Y4:CLOCKREGION_X0Y4 CLOCKREGION_X0Y5:CLOCKREGION_X0Y5 CLOCKREGION_X0Y6:CLOCKREGION_X0Y6 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3 CLOCKREGION_X1Y4:CLOCKREGION_X1Y4 CLOCKREGION_X1Y5:CLOCKREGION_X1Y5 CLOCKREGION_X1Y6:CLOCKREGION_X1Y6}
+create_pblock CLKAG_dyract_sys_i/dyract_0/inst/pcie/PIPE_OOBCLK_IN
+add_cells_to_pblock [get_pblocks  CLKAG_dyract_sys_i/dyract_0/inst/pcie/PIPE_OOBCLK_IN] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="dyract_sys_i/dyract_0/inst/pcie/PIPE_OOBCLK_IN"}]]]
+resize_pblock [get_pblocks CLKAG_dyract_sys_i/dyract_0/inst/pcie/PIPE_OOBCLK_IN] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X0Y4:CLOCKREGION_X0Y4 CLOCKREGION_X0Y5:CLOCKREGION_X0Y5 CLOCKREGION_X0Y6:CLOCKREGION_X0Y6 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3 CLOCKREGION_X1Y4:CLOCKREGION_X1Y4 CLOCKREGION_X1Y5:CLOCKREGION_X1Y5 CLOCKREGION_X1Y6:CLOCKREGION_X1Y6}
 #endgroup
 
-# Clock net "dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_OOBCLK_IN" driven by instance "dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1" located at site "BUFGCTRL_X0Y1"
+# Clock net "dyract_sys_i/dyract_0/inst/pcie/PIPE_USERCLK1_IN" driven by instance "dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/userclk1_i1.usrclk1_i1" located at site "BUFGCTRL_X0Y3"
 #startgroup
-create_pblock CLKAG_dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_OOBCLK_IN
-add_cells_to_pblock [get_pblocks  CLKAG_dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_OOBCLK_IN] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_OOBCLK_IN"}]]]
-resize_pblock [get_pblocks CLKAG_dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_OOBCLK_IN] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X0Y4:CLOCKREGION_X0Y4 CLOCKREGION_X0Y5:CLOCKREGION_X0Y5 CLOCKREGION_X0Y6:CLOCKREGION_X0Y6 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3 CLOCKREGION_X1Y4:CLOCKREGION_X1Y4 CLOCKREGION_X1Y5:CLOCKREGION_X1Y5 CLOCKREGION_X1Y6:CLOCKREGION_X1Y6}
+create_pblock CLKAG_dyract_sys_i/dyract_0/inst/pcie/PIPE_USERCLK1_IN
+add_cells_to_pblock [get_pblocks  CLKAG_dyract_sys_i/dyract_0/inst/pcie/PIPE_USERCLK1_IN] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="dyract_sys_i/dyract_0/inst/pcie/PIPE_USERCLK1_IN"}]]]
+resize_pblock [get_pblocks CLKAG_dyract_sys_i/dyract_0/inst/pcie/PIPE_USERCLK1_IN] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X0Y4:CLOCKREGION_X0Y4 CLOCKREGION_X0Y5:CLOCKREGION_X0Y5 CLOCKREGION_X0Y6:CLOCKREGION_X0Y6 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3 CLOCKREGION_X1Y4:CLOCKREGION_X1Y4 CLOCKREGION_X1Y5:CLOCKREGION_X1Y5 CLOCKREGION_X1Y6:CLOCKREGION_X1Y6}
 #endgroup
 
-# Clock net "dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_USERCLK1_IN" driven by instance "dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/userclk1_i1.usrclk1_i1" located at site "BUFGCTRL_X0Y3"
+# Clock net "dyract_sys_i/dyract_0/inst/pcie/PIPE_USERCLK2_IN" driven by instance "dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/userclk2_i1.usrclk2_i1" located at site "BUFGCTRL_X0Y0"
 #startgroup
-create_pblock CLKAG_dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_USERCLK1_IN
-add_cells_to_pblock [get_pblocks  CLKAG_dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_USERCLK1_IN] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_USERCLK1_IN"}]]]
-resize_pblock [get_pblocks CLKAG_dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_USERCLK1_IN] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X0Y4:CLOCKREGION_X0Y4 CLOCKREGION_X0Y5:CLOCKREGION_X0Y5 CLOCKREGION_X0Y6:CLOCKREGION_X0Y6 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3 CLOCKREGION_X1Y4:CLOCKREGION_X1Y4 CLOCKREGION_X1Y5:CLOCKREGION_X1Y5 CLOCKREGION_X1Y6:CLOCKREGION_X1Y6}
+create_pblock CLKAG_dyract_sys_i/dyract_0/inst/pcie/PIPE_USERCLK2_IN
+add_cells_to_pblock [get_pblocks  CLKAG_dyract_sys_i/dyract_0/inst/pcie/PIPE_USERCLK2_IN] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=dyract_sys_i/dyract_0/inst/pcie/app/ucg/mmcm_inst} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="dyract_sys_i/dyract_0/inst/pcie/PIPE_USERCLK2_IN"}]]]
+resize_pblock [get_pblocks CLKAG_dyract_sys_i/dyract_0/inst/pcie/PIPE_USERCLK2_IN] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X0Y4:CLOCKREGION_X0Y4 CLOCKREGION_X0Y5:CLOCKREGION_X0Y5 CLOCKREGION_X0Y6:CLOCKREGION_X0Y6 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3 CLOCKREGION_X1Y4:CLOCKREGION_X1Y4 CLOCKREGION_X1Y5:CLOCKREGION_X1Y5 CLOCKREGION_X1Y6:CLOCKREGION_X1Y6}
 #endgroup
 
-# Clock net "dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_USERCLK2_IN" driven by instance "dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/userclk2_i1.usrclk2_i1" located at site "BUFGCTRL_X0Y0"
+# Clock net "dyract_sys_i/dyract_0/inst/pcie/icap_clk" driven by instance "dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/icapclk_i1" located at site "BUFGCTRL_X0Y6"
 #startgroup
-create_pblock CLKAG_dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_USERCLK2_IN
-add_cells_to_pblock [get_pblocks  CLKAG_dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_USERCLK2_IN] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=dyract_sys_i/dyract_0/inst/pcie/app/ucg/mmcm_inst} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_USERCLK2_IN"}]]]
-resize_pblock [get_pblocks CLKAG_dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/PIPE_USERCLK2_IN] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X0Y4:CLOCKREGION_X0Y4 CLOCKREGION_X0Y5:CLOCKREGION_X0Y5 CLOCKREGION_X0Y6:CLOCKREGION_X0Y6 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3 CLOCKREGION_X1Y4:CLOCKREGION_X1Y4 CLOCKREGION_X1Y5:CLOCKREGION_X1Y5 CLOCKREGION_X1Y6:CLOCKREGION_X1Y6}
-#endgroup
-
-# Clock net "dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/icap_clk" driven by instance "dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/icapclk_i1" located at site "BUFGCTRL_X0Y6"
-#startgroup
-create_pblock CLKAG_dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/icap_clk
-add_cells_to_pblock [get_pblocks  CLKAG_dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/icap_clk] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=dyract_sys_i/dyract_0/inst/pcie/app/ucg/mmcm_inst} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/icap_clk"}]]]
-resize_pblock [get_pblocks CLKAG_dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_clock_i/icap_clk] -add {CLOCKREGION_X0Y5:CLOCKREGION_X0Y5 CLOCKREGION_X0Y6:CLOCKREGION_X0Y6 CLOCKREGION_X1Y5:CLOCKREGION_X1Y5 CLOCKREGION_X1Y6:CLOCKREGION_X1Y6}
+create_pblock CLKAG_dyract_sys_i/dyract_0/inst/pcie/icap_clk
+add_cells_to_pblock [get_pblocks  CLKAG_dyract_sys_i/dyract_0/inst/pcie/icap_clk] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=dyract_sys_i/dyract_0/inst/pcie/app/ucg/mmcm_inst} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="dyract_sys_i/dyract_0/inst/pcie/icap_clk"}]]]
+resize_pblock [get_pblocks CLKAG_dyract_sys_i/dyract_0/inst/pcie/icap_clk] -add {CLOCKREGION_X0Y5:CLOCKREGION_X0Y5 CLOCKREGION_X0Y6:CLOCKREGION_X0Y6 CLOCKREGION_X1Y5:CLOCKREGION_X1Y5 CLOCKREGION_X1Y6:CLOCKREGION_X1Y6}
 #endgroup
 
 # Clock net "dyract_sys_i/dyract_0/inst/pcie/pcie_7x_v1_8_i/inst/inst/gt_top_i/pipe_wrapper_i/gt_cpllpdrefclk" driven by instance "dyract_sys_i/dyract_0/inst/pcie/pcie_7x_v1_8_i/inst/inst/gt_top_i/pipe_wrapper_i/cpllpd_refclk_inst" located at site "BUFGCTRL_X0Y8"
@@ -405,6 +408,13 @@ resize_pblock [get_pblocks CLKAG_dyract_sys_i/dyract_0/inst/pcie/ext_clk.pipe_cl
 create_pblock CLKAG_dyract_sys_i/dyract_0/inst/pcie/pcie_7x_v1_8_i/inst/inst/gt_top_i/pipe_wrapper_i/gt_cpllpdrefclk
 add_cells_to_pblock [get_pblocks  CLKAG_dyract_sys_i/dyract_0/inst/pcie/pcie_7x_v1_8_i/inst/inst/gt_top_i/pipe_wrapper_i/gt_cpllpdrefclk] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="dyract_sys_i/dyract_0/inst/pcie/pcie_7x_v1_8_i/inst/inst/gt_top_i/pipe_wrapper_i/gt_cpllpdrefclk"}]]]
 resize_pblock [get_pblocks CLKAG_dyract_sys_i/dyract_0/inst/pcie/pcie_7x_v1_8_i/inst/inst/gt_top_i/pipe_wrapper_i/gt_cpllpdrefclk] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X0Y4:CLOCKREGION_X0Y4 CLOCKREGION_X0Y5:CLOCKREGION_X0Y5 CLOCKREGION_X0Y6:CLOCKREGION_X0Y6 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3 CLOCKREGION_X1Y4:CLOCKREGION_X1Y4 CLOCKREGION_X1Y5:CLOCKREGION_X1Y5 CLOCKREGION_X1Y6:CLOCKREGION_X1Y6}
+#endgroup
+
+# Clock net "dyract_sys_i/dyract_0/inst/user_clk" driven by instance "dyract_sys_i/dyract_0/inst/pcie/app/ucg/BUFG_CLK0" located at site "BUFGCTRL_X0Y19"
+#startgroup
+create_pblock CLKAG_dyract_sys_i/dyract_0/inst/user_clk
+add_cells_to_pblock [get_pblocks  CLKAG_dyract_sys_i/dyract_0/inst/user_clk] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="dyract_sys_i/dyract_0/inst/user_clk"}]]]
+resize_pblock [get_pblocks CLKAG_dyract_sys_i/dyract_0/inst/user_clk] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X0Y4:CLOCKREGION_X0Y4 CLOCKREGION_X0Y5:CLOCKREGION_X0Y5 CLOCKREGION_X0Y6:CLOCKREGION_X0Y6 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3 CLOCKREGION_X1Y4:CLOCKREGION_X1Y4 CLOCKREGION_X1Y5:CLOCKREGION_X1Y5 CLOCKREGION_X1Y6:CLOCKREGION_X1Y6}
 #endgroup
 
 # Clock net "dyract_sys_i/mdm_1/U0/Ext_JTAG_DRCK" driven by instance "dyract_sys_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK" located at site "BUFGCTRL_X0Y5"

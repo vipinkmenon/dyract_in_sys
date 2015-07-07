@@ -241,7 +241,7 @@ proc create_root_design { parentCell } {
   set_property -dict [ list CONFIG.NUM_MI {1} CONFIG.NUM_SI {5}  ] $axi_mem_intercon
 
   # Create instance: dyract_0, and set properties
-  set dyract_0 [ create_bd_cell -type ip -vlnv VIP:pcie_intf:dyract:1.0 dyract_0 ]
+  set dyract_0 [ create_bd_cell -type ip -vlnv VIP:pcie:dyract:1.1 dyract_0 ]
 
   # Create instance: mdm_1, and set properties
   set mdm_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:mdm:3.2 mdm_1 ]
@@ -263,9 +263,7 @@ proc create_root_design { parentCell } {
   # Create interface connections
   connect_bd_intf_net -intf_net axi_mem_intercon_M00_AXI [get_bd_intf_pins axi_mem_intercon/M00_AXI] [get_bd_intf_pins mig_7series_0/S_AXI]
   connect_bd_intf_net -intf_net dyract_0_m_axi_mm2s [get_bd_intf_pins axi_mem_intercon/S03_AXI] [get_bd_intf_pins dyract_0/m_axi_mm2s]
-  set_property -dict [ list HDL_ATTRIBUTE.MARK_DEBUG {true}  ] [get_bd_intf_nets dyract_0_m_axi_mm2s]
   connect_bd_intf_net -intf_net dyract_0_m_axi_s2mm [get_bd_intf_pins axi_mem_intercon/S04_AXI] [get_bd_intf_pins dyract_0/m_axi_s2mm]
-  set_property -dict [ list HDL_ATTRIBUTE.MARK_DEBUG {true}  ] [get_bd_intf_nets dyract_0_m_axi_s2mm]
   connect_bd_intf_net -intf_net microblaze_0_M_AXI_DC [get_bd_intf_pins axi_mem_intercon/S00_AXI] [get_bd_intf_pins microblaze_0/M_AXI_DC]
   connect_bd_intf_net -intf_net microblaze_0_M_AXI_DP [get_bd_intf_pins axi_mem_intercon/S02_AXI] [get_bd_intf_pins microblaze_0/M_AXI_DP]
   connect_bd_intf_net -intf_net microblaze_0_M_AXI_IC [get_bd_intf_pins axi_mem_intercon/S01_AXI] [get_bd_intf_pins microblaze_0/M_AXI_IC]

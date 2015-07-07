@@ -212,9 +212,9 @@
       </spirit:componentInstance>
       <spirit:componentInstance>
         <spirit:instanceName>dyract_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="pcie_intf" spirit:name="dyract" spirit:vendor="VIP" spirit:version="1.0"/>
+        <spirit:componentRef spirit:library="pcie" spirit:name="dyract" spirit:vendor="VIP" spirit:version="1.1"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">dyract_sys_dyract_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">dyract_sys_dyract_0_1</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -258,17 +258,11 @@
         <spirit:name>dyract_0_m_axi_mm2s</spirit:name>
         <spirit:activeInterface spirit:busRef="m_axi_mm2s" spirit:componentRef="dyract_0"/>
         <spirit:activeInterface spirit:busRef="S03_AXI" spirit:componentRef="axi_mem_intercon"/>
-        <bd:hdl_attributes>
-          <bd:hdl_attribute bd:name="MARK_DEBUG" bd:value="true"/>
-        </bd:hdl_attributes>
       </spirit:interconnection>
       <spirit:interconnection>
         <spirit:name>dyract_0_m_axi_s2mm</spirit:name>
         <spirit:activeInterface spirit:busRef="m_axi_s2mm" spirit:componentRef="dyract_0"/>
         <spirit:activeInterface spirit:busRef="S04_AXI" spirit:componentRef="axi_mem_intercon"/>
-        <bd:hdl_attributes>
-          <bd:hdl_attribute bd:name="MARK_DEBUG" bd:value="true"/>
-        </bd:hdl_attributes>
       </spirit:interconnection>
     </spirit:interconnections>
     <spirit:adHocConnections>
@@ -281,17 +275,17 @@
         <spirit:name>mig_7series_0_ui_clk</spirit:name>
         <spirit:internalPortReference spirit:componentRef="mig_7series_0" spirit:portRef="ui_clk"/>
         <spirit:internalPortReference spirit:componentRef="rst_mig_7series_0_100M" spirit:portRef="slowest_sync_clk"/>
-        <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="M00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0" spirit:portRef="Clk"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_local_memory" spirit:portRef="LMB_Clk"/>
-        <spirit:internalPortReference spirit:componentRef="dyract_0" spirit:portRef="m_axi_mm2s_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="dyract_0" spirit:portRef="m_axi_s2mm_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="M00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="S00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="S01_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="S02_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="S03_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="S04_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="dyract_0" spirit:portRef="m_axi_mm2s_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="dyract_0" spirit:portRef="m_axi_s2mm_aclk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>mig_7series_0_mmcm_locked</spirit:name>
@@ -313,51 +307,6 @@
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="S02_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="S03_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="S04_ARESETN"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>sys_clk_n_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="sys_clk_n"/>
-        <spirit:internalPortReference spirit:componentRef="dyract_0" spirit:portRef="sys_clk_n"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>sys_clk_p_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="sys_clk_p"/>
-        <spirit:internalPortReference spirit:componentRef="dyract_0" spirit:portRef="sys_clk_p"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>dyract_0_pci_exp_txp</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="dyract_0" spirit:portRef="pci_exp_txp"/>
-        <spirit:externalPortReference spirit:portRef="pci_exp_txp"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>pci_exp_rxn_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="pci_exp_rxn"/>
-        <spirit:internalPortReference spirit:componentRef="dyract_0" spirit:portRef="pci_exp_rxn"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>dyract_0_pci_exp_txn</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="dyract_0" spirit:portRef="pci_exp_txn"/>
-        <spirit:externalPortReference spirit:portRef="pci_exp_txn"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>dyract_0_pcie_link_status</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="dyract_0" spirit:portRef="pcie_link_status"/>
-        <spirit:externalPortReference spirit:portRef="pcie_link_status"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>pci_exp_rxp_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="pci_exp_rxp"/>
-        <spirit:internalPortReference spirit:componentRef="dyract_0" spirit:portRef="pci_exp_rxp"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>sys_reset_n_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="sys_reset_n"/>
-        <spirit:internalPortReference spirit:componentRef="dyract_0" spirit:portRef="sys_reset_n"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>dyract_0_heartbeat</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="dyract_0" spirit:portRef="heartbeat"/>
-        <spirit:externalPortReference spirit:portRef="heartbeat"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>mig_7series_0_init_calib_complete</spirit:name>
@@ -383,6 +332,51 @@
         <spirit:name>mdm_1_Debug_SYS_Rst</spirit:name>
         <spirit:internalPortReference spirit:componentRef="mdm_1" spirit:portRef="Debug_SYS_Rst"/>
         <spirit:internalPortReference spirit:componentRef="rst_mig_7series_0_100M" spirit:portRef="mb_debug_sys_rst"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>dyract_0_pci_exp_txp</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="dyract_0" spirit:portRef="pci_exp_txp"/>
+        <spirit:externalPortReference spirit:portRef="pci_exp_txp"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>dyract_0_pci_exp_txn</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="dyract_0" spirit:portRef="pci_exp_txn"/>
+        <spirit:externalPortReference spirit:portRef="pci_exp_txn"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>dyract_0_pcie_link_status</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="dyract_0" spirit:portRef="pcie_link_status"/>
+        <spirit:externalPortReference spirit:portRef="pcie_link_status"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>dyract_0_heartbeat</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="dyract_0" spirit:portRef="heartbeat"/>
+        <spirit:externalPortReference spirit:portRef="heartbeat"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>pci_exp_rxp_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="pci_exp_rxp"/>
+        <spirit:internalPortReference spirit:componentRef="dyract_0" spirit:portRef="pci_exp_rxp"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>pci_exp_rxn_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="pci_exp_rxn"/>
+        <spirit:internalPortReference spirit:componentRef="dyract_0" spirit:portRef="pci_exp_rxn"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>sys_clk_p_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="sys_clk_p"/>
+        <spirit:internalPortReference spirit:componentRef="dyract_0" spirit:portRef="sys_clk_p"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>sys_clk_n_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="sys_clk_n"/>
+        <spirit:internalPortReference spirit:componentRef="dyract_0" spirit:portRef="sys_clk_n"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>sys_reset_n_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="sys_reset_n"/>
+        <spirit:internalPortReference spirit:componentRef="dyract_0" spirit:portRef="sys_reset_n"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
     <spirit:hierConnections>
@@ -2456,7 +2450,7 @@
     <spirit:vendor>VIP</spirit:vendor>
     <spirit:library>Addressing/dyract_0</spirit:library>
     <spirit:name>dyract</spirit:name>
-    <spirit:version>1.0</spirit:version>
+    <spirit:version>1.1</spirit:version>
     <spirit:addressSpaces>
       <spirit:addressSpace>
         <spirit:name>m_axi_mm2s</spirit:name>

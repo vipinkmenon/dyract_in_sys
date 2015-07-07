@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7vx485tffg1761-2" LaunchTime="1436263551">
+<GenRun Id="synth_1" LaunchPart="xc7vx485tffg1761-2" LaunchTime="1436279305">
   <File Type="VDS-TIMING-PB" Name="dyract_sys_wrapper_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="dyract_sys_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="dyract_sys_wrapper.dcp"/>
@@ -24,7 +24,7 @@
     <File Path="$PSRCDIR/sources_1/imports/hdl/dyract_sys_wrapper.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/bd/dyract_sys/hdl/dyract_sys_wrapper.v"/>
-        <Attr Name="ImportTime" Val="1436203686"/>
+        <Attr Name="ImportTime" Val="1436279047"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -55,9 +55,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

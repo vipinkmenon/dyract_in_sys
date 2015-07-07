@@ -23,34 +23,34 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="ip/dyract_sys_auto_us_2/dyract_sys_auto_us_2.xci"/>
-        <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="ip/dyract_sys_dlmb_v10_1/dyract_sys_dlmb_v10_1.xci"/>
-        <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="ip/dyract_sys_mig_7series_0_3/dyract_sys_mig_7series_0_3.xci"/>
-        <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="ip/dyract_sys_dlmb_bram_if_cntlr_1/dyract_sys_dlmb_bram_if_cntlr_1.xci"/>
-        <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="hw_handoff/dyract_sys.hwh"/>
-        <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="ip/dyract_sys_auto_us_4/dyract_sys_auto_us_4.xci"/>
-        <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="ip/dyract_sys_dyract_0_0/dyract_sys_dyract_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="ip/dyract_sys_xbar_1/dyract_sys_xbar_1.xci"/>
-        <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="ip/dyract_sys_ilmb_bram_if_cntlr_1/dyract_sys_ilmb_bram_if_cntlr_1.xci"/>
-        <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="dyract_sys_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="ip/dyract_sys_axi_mem_intercon_0/dyract_sys_axi_mem_intercon_0.xci"/>
         <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="ip/dyract_sys_ilmb_v10_1/dyract_sys_ilmb_v10_1.xci"/>
         <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="ip/dyract_sys_microblaze_0_1/dyract_sys_microblaze_0_1.xci"/>
+        <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="ip/dyract_sys_ilmb_bram_if_cntlr_1/dyract_sys_ilmb_bram_if_cntlr_1.xci"/>
+        <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="ip/dyract_sys_xbar_1/dyract_sys_xbar_1.xci"/>
         <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="ip/dyract_sys_rst_mig_7series_0_100M_1/dyract_sys_rst_mig_7series_0_100M_1.xci"/>
         <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="ip/dyract_sys_lmb_bram_1/dyract_sys_lmb_bram_1.xci"/>
+        <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="ip/dyract_sys_dlmb_v10_1/dyract_sys_dlmb_v10_1.xci"/>
         <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="ip/dyract_sys_mdm_1_1/dyract_sys_mdm_1_1.xci"/>
-        <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="ip/dyract_sys_auto_us_3/dyract_sys_auto_us_3.xci"/>
-        <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="ip/dyract_sys_auto_us_0/dyract_sys_auto_us_0.xci"/>
-        <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="dyract_sys.bmm"/>
+        <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="ip/dyract_sys_dyract_0_1/dyract_sys_dyract_0_1.xci"/>
         <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="hw_handoff/dyract_sys_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="hdl/dyract_sys.v"/>
+        <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="hw_handoff/dyract_sys.hwh"/>
+        <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="dyract_sys_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="dyract_sys.bmm"/>
         <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="ip/dyract_sys_auto_pc_0/dyract_sys_auto_pc_0.xci"/>
+        <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="ip/dyract_sys_auto_us_4/dyract_sys_auto_us_4.xci"/>
         <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="ip/dyract_sys_auto_us_1/dyract_sys_auto_us_1.xci"/>
+        <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="ip/dyract_sys_auto_us_0/dyract_sys_auto_us_0.xci"/>
+        <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="ip/dyract_sys_auto_us_3/dyract_sys_auto_us_3.xci"/>
+        <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="ip/dyract_sys_auto_us_2/dyract_sys_auto_us_2.xci"/>
+        <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="ip/dyract_sys_mig_7series_0_3/dyract_sys_mig_7series_0_3.xci"/>
+        <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="ip/dyract_sys_axi_mem_intercon_0/dyract_sys_axi_mem_intercon_0.xci"/>
+        <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="hdl/dyract_sys.v"/>
+        <CompFileExtendedInfo CompFileName="dyract_sys.bd" FileRelPathName="ip/dyract_sys_dlmb_bram_if_cntlr_1/dyract_sys_dlmb_bram_if_cntlr_1.xci"/>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/hdl/dyract_sys_wrapper.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/bd/dyract_sys/hdl/dyract_sys_wrapper.v"/>
-          <Attr Name="ImportTime" Val="1436203686"/>
+          <Attr Name="ImportTime" Val="1436279047"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -81,6 +81,7 @@
       </Config>
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+      <Filter Type="Srcs"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="dyract_sys_wrapper"/>
@@ -108,18 +109,14 @@
   <Runs Version="1" Minor="9">
     <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7vx485tffg1761-2" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" State="current" Dir="$PRUNDIR/synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
     </Run>
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7vx485tffg1761-2" ConstrsSet="constrs_1" Description="Vivado Implementation Defaults" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014">
-          <Desc>Vivado Implementation Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

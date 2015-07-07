@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-| Date         : Tue Jul  7 12:13:37 2015
+| Date         : Tue Jul  7 16:43:14 2015
 | Host         : lappc14.epfl.ch running 64-bit Red Hat Enterprise Linux Server release 7.1 (Maipo)
 | Command      : report_io -file dyract_sys_wrapper_io_placed.rpt
 | Design       : dyract_sys_wrapper
