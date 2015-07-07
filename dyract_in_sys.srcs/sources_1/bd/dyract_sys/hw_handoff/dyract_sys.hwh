@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Jul  7 16:24:07 2015" VIVADOVERSION="2014.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Jul  7 21:13:40 2015" VIVADOVERSION="2014.4">
 
   <SYSTEMINFO ARCH="virtex7" BOARD="xilinx.com:vc707:part0:1.1" DEVICE="7vx485t" NAME="dyract_sys_imp" PACKAGE="ffg1761" SPEEDGRADE="-2"/>
 
@@ -1466,7 +1466,7 @@
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="RECONFIG_ENABLE" VALUE="0"/>
-        <PARAMETER NAME="Component_Name" VALUE="dyract_sys_dyract_0_1"/>
+        <PARAMETER NAME="Component_Name" VALUE="dyract_sys_dyract_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
