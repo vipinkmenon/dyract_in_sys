@@ -3,10 +3,27 @@
   <probeset name="EDA_PROBESET" active="true">
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
-        <Option Id="COMPARE_VALUE.0" value="eq8&apos;hXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq5&apos;hXX"/>
         <Option Id="CORE_LOCATION" value="1:0"/>
         <Option Id="HW_ILA" value="u_ila_0"/>
         <Option Id="PROBE_PORT" value="0"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="5"/>
+      </probeOptions>
+      <nets>
+        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/tx_engine/wr_cntr[4]"/>
+        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/tx_engine/wr_cntr[3]"/>
+        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/tx_engine/wr_cntr[2]"/>
+        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/tx_engine/wr_cntr[1]"/>
+        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/tx_engine/wr_cntr[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="COMPARE_VALUE.0" value="eq8&apos;hXX"/>
+        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="PROBE_PORT" value="1"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
         <Option Id="PROBE_PORT_BIT_COUNT" value="8"/>
       </probeOptions>
@@ -23,17 +40,14 @@
     </probe>
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
-        <Option Id="COMPARE_VALUE.0" value="eq4&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
         <Option Id="CORE_LOCATION" value="1:0"/>
         <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="1"/>
+        <Option Id="PROBE_PORT" value="2"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="4"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
       <nets>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/s_axis_rq_tready[3]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/s_axis_rq_tready[2]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/s_axis_rq_tready[1]"/>
         <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/s_axis_rq_tready[0]"/>
       </nets>
     </probe>
@@ -42,74 +56,16 @@
         <Option Id="COMPARE_VALUE.0" value="eq5&apos;hXX"/>
         <Option Id="CORE_LOCATION" value="1:0"/>
         <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="2"/>
+        <Option Id="PROBE_PORT" value="3"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
         <Option Id="PROBE_PORT_BIT_COUNT" value="5"/>
       </probeOptions>
       <nets>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/tx_engine/wr_cntr[4]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/tx_engine/wr_cntr[3]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/tx_engine/wr_cntr[2]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/tx_engine/wr_cntr[1]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/tx_engine/wr_cntr[0]"/>
-      </nets>
-    </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
-      <probeOptions Id="DebugProbeParams">
-        <Option Id="COMPARE_VALUE.0" value="eq2&apos;hX"/>
-        <Option Id="CORE_LOCATION" value="1:0"/>
-        <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="3"/>
-        <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="2"/>
-      </probeOptions>
-      <nets>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/adpt/rd_state[1]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/adpt/rd_state[0]"/>
-      </nets>
-    </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
-      <probeOptions Id="DebugProbeParams">
-        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
-        <Option Id="CORE_LOCATION" value="1:0"/>
-        <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="4"/>
-        <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="32"/>
-      </probeOptions>
-      <nets>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[31]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[30]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[29]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[28]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[27]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[26]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[25]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[24]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[23]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[22]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[21]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[20]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[19]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[18]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[17]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[16]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[15]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[14]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[13]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[12]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[11]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[10]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[9]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[8]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[7]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[6]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[5]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[4]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[3]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[2]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[1]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/user_sys_dma_len[0]"/>
+        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/psg1/user_stream_data_len_o[4]"/>
+        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/psg1/user_stream_data_len_o[3]"/>
+        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/psg1/user_stream_data_len_o[2]"/>
+        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/psg1/user_stream_data_len_o[1]"/>
+        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/psg1/user_stream_data_len_o[0]"/>
       </nets>
     </probe>
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
@@ -117,7 +73,7 @@
         <Option Id="COMPARE_VALUE.0" value="eq31&apos;hXXXX_XXXX"/>
         <Option Id="CORE_LOCATION" value="1:0"/>
         <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="5"/>
+        <Option Id="PROBE_PORT" value="4"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
         <Option Id="PROBE_PORT_BIT_COUNT" value="31"/>
       </probeOptions>
@@ -157,27 +113,10 @@
     </probe>
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
-        <Option Id="COMPARE_VALUE.0" value="eq5&apos;hXX"/>
-        <Option Id="CORE_LOCATION" value="1:0"/>
-        <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="6"/>
-        <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="5"/>
-      </probeOptions>
-      <nets>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/psg1/user_stream_data_len_o[4]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/psg1/user_stream_data_len_o[3]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/psg1/user_stream_data_len_o[2]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/psg1/user_stream_data_len_o[1]"/>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/psg1/user_stream_data_len_o[0]"/>
-      </nets>
-    </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
-      <probeOptions Id="DebugProbeParams">
         <Option Id="COMPARE_VALUE.0" value="eq8&apos;hXX"/>
         <Option Id="CORE_LOCATION" value="1:0"/>
         <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="7"/>
+        <Option Id="PROBE_PORT" value="5"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
         <Option Id="PROBE_PORT_BIT_COUNT" value="8"/>
       </probeOptions>
@@ -197,176 +136,7 @@
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
         <Option Id="CORE_LOCATION" value="1:0"/>
         <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="8"/>
-        <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
-      </probeOptions>
-      <nets>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/adpt/i_pcie_str_ack"/>
-      </nets>
-    </probe>
-    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
-      <probeOptions Id="DebugProbeParams">
-        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
-        <Option Id="CORE_LOCATION" value="1:0"/>
-        <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="9"/>
-        <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
-      </probeOptions>
-      <nets>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/intr_done"/>
-      </nets>
-    </probe>
-    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
-      <probeOptions Id="DebugProbeParams">
-        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
-        <Option Id="CORE_LOCATION" value="1:0"/>
-        <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="10"/>
-        <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
-      </probeOptions>
-      <nets>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/intr_req"/>
-      </nets>
-    </probe>
-    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
-      <probeOptions Id="DebugProbeParams">
-        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
-        <Option Id="CORE_LOCATION" value="1:0"/>
-        <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="11"/>
-        <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
-      </probeOptions>
-      <nets>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/adpt/o_pcie_str_data_valid"/>
-      </nets>
-    </probe>
-    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
-      <probeOptions Id="DebugProbeParams">
-        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
-        <Option Id="CORE_LOCATION" value="1:0"/>
-        <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="12"/>
-        <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
-      </probeOptions>
-      <nets>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/adpt/s_axis_mm2s_cmd_tvalid"/>
-      </nets>
-    </probe>
-    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
-      <probeOptions Id="DebugProbeParams">
-        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
-        <Option Id="CORE_LOCATION" value="1:0"/>
-        <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="13"/>
-        <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
-      </probeOptions>
-      <nets>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/s_axis_rq_tvalid"/>
-      </nets>
-    </probe>
-    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
-      <probeOptions Id="DebugProbeParams">
-        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
-        <Option Id="CORE_LOCATION" value="1:0"/>
-        <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="14"/>
-        <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
-      </probeOptions>
-      <nets>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/tx_engine/user_str_data_rd_o"/>
-      </nets>
-    </probe>
-    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
-      <probeOptions Id="DebugProbeParams">
-        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
-        <Option Id="CORE_LOCATION" value="1:0"/>
-        <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="15"/>
-        <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
-      </probeOptions>
-      <nets>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/psg1/user_stream_data_avail_o"/>
-      </nets>
-    </probe>
-    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
-      <probeOptions Id="DebugProbeParams">
-        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
-        <Option Id="CORE_LOCATION" value="1:0"/>
-        <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="16"/>
-        <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
-      </probeOptions>
-      <nets>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/psg1/user_stream_data_rd_i"/>
-      </nets>
-    </probe>
-    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
-      <probeOptions Id="DebugProbeParams">
-        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
-        <Option Id="CORE_LOCATION" value="1:0"/>
-        <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="17"/>
-        <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
-      </probeOptions>
-      <nets>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/psg1/user_stream_wr_ack_i"/>
-      </nets>
-    </probe>
-    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
-      <probeOptions Id="DebugProbeParams">
-        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
-        <Option Id="CORE_LOCATION" value="1:0"/>
-        <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="18"/>
-        <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
-      </probeOptions>
-      <nets>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/adpt/user_sys_dma_en_i"/>
-      </nets>
-    </probe>
-    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
-      <probeOptions Id="DebugProbeParams">
-        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
-        <Option Id="CORE_LOCATION" value="1:0"/>
-        <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="19"/>
-        <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
-      </probeOptions>
-      <nets>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/psg1/user_sys_strm_done_o"/>
-      </nets>
-    </probe>
-    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
-      <probeOptions Id="DebugProbeParams">
-        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
-        <Option Id="CORE_LOCATION" value="1:0"/>
-        <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="20"/>
-        <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
-      </probeOptions>
-      <nets>
-        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/psg1/user_sys_strm_en_i"/>
-      </nets>
-    </probe>
-    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
-      <probeOptions Id="DebugProbeParams">
-        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
-        <Option Id="CORE_LOCATION" value="1:0"/>
-        <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="21"/>
+        <Option Id="PROBE_PORT" value="6"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
@@ -379,7 +149,7 @@
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
         <Option Id="CORE_LOCATION" value="1:0"/>
         <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="22"/>
+        <Option Id="PROBE_PORT" value="7"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
@@ -392,7 +162,7 @@
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
         <Option Id="CORE_LOCATION" value="1:0"/>
         <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="23"/>
+        <Option Id="PROBE_PORT" value="8"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
@@ -405,7 +175,7 @@
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
         <Option Id="CORE_LOCATION" value="1:0"/>
         <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="24"/>
+        <Option Id="PROBE_PORT" value="9"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
@@ -418,7 +188,7 @@
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
         <Option Id="CORE_LOCATION" value="1:0"/>
         <Option Id="HW_ILA" value="u_ila_0"/>
-        <Option Id="PROBE_PORT" value="25"/>
+        <Option Id="PROBE_PORT" value="10"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
@@ -429,53 +199,144 @@
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
-        <Option Id="CORE_LOCATION" value="1:1"/>
-        <Option Id="HW_ILA" value="u_ila_1"/>
-        <Option Id="PROBE_PORT" value="0"/>
+        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="PROBE_PORT" value="11"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
       <nets>
-        <net name="dyract_gen3_sys_i/dyract_0/m_axi_arready"/>
+        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/tx_engine/user_str_data_rd_o"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
-        <Option Id="CORE_LOCATION" value="1:1"/>
-        <Option Id="HW_ILA" value="u_ila_1"/>
-        <Option Id="PROBE_PORT" value="1"/>
+        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="PROBE_PORT" value="12"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
       <nets>
-        <net name="dyract_gen3_sys_i/dyract_0/m_axi_arvalid"/>
+        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/s_axis_rq_tvalid"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
-        <Option Id="CORE_LOCATION" value="1:1"/>
-        <Option Id="HW_ILA" value="u_ila_1"/>
-        <Option Id="PROBE_PORT" value="2"/>
+        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="PROBE_PORT" value="13"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
       <nets>
-        <net name="dyract_gen3_sys_i/dyract_0/m_axi_rready"/>
+        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/tx_engine/user_str_dma_done_o"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
-        <Option Id="CORE_LOCATION" value="1:1"/>
-        <Option Id="HW_ILA" value="u_ila_1"/>
-        <Option Id="PROBE_PORT" value="3"/>
+        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="PROBE_PORT" value="14"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
       <nets>
-        <net name="dyract_gen3_sys_i/dyract_0/m_axi_rvalid"/>
+        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/s_axis_rq_tlast"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="PROBE_PORT" value="15"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
+      </probeOptions>
+      <nets>
+        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/psg1/user_sys_strm_en_i"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="PROBE_PORT" value="16"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
+      </probeOptions>
+      <nets>
+        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/psg1/n_0_wr_state_reg_1[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="PROBE_PORT" value="17"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
+      </probeOptions>
+      <nets>
+        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/psg1/n_0_wr_state_reg[1]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="PROBE_PORT" value="18"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
+      </probeOptions>
+      <nets>
+        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/psg1/user_stream_data_avail_o"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="PROBE_PORT" value="19"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
+      </probeOptions>
+      <nets>
+        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/psg1/stream_data_valid_i"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="PROBE_PORT" value="20"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
+      </probeOptions>
+      <nets>
+        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/psg1/stream_data_ready_o"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="PROBE_PORT" value="21"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
+      </probeOptions>
+      <nets>
+        <net name="dyract_gen3_sys_i/dyract_0/inst/pcie/pcie_app/psg1/user_stream_data_rd_i"/>
       </nets>
     </probe>
   </probeset>
